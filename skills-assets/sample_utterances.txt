@@ -10,7 +10,7 @@ Greeting Sup
 Greeting Wassup
 Greeting Yo
 Fixture Are {Team} at home this weekend
-Fixture Is the game on {Date} or {Date} this week
+Fixture Is the game on {Date}
 Fixture Is there a game {Date}
 Fixture Next up
 Fixture What's the game today

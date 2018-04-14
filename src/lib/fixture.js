@@ -33,7 +33,7 @@ class Fixture {
      * @returns {boolean} True if the fixture has scores
      */
     isResult() {
-        if (this.kickoff < Date.now()) {
+        if (this.homeTeamScore && this.awayTeamScore) {
             return true;
         }
 

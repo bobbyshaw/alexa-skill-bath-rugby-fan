@@ -78,8 +78,8 @@ class FixtureService {
                     let fixtures = [];
                     for (let fixture of response.data) {
                         fixtures.push(new Fixture(
-                            fixture.home_team.name,
-                            fixture.away_team.name,
+                            fixture.home_team,
+                            fixture.away_team,
                             fixture.home_score,
                             fixture.away_score,
                             fixture.location,

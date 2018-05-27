@@ -32,13 +32,13 @@ The first request may be slow as Drop22 is on a Heroku free dyno so will take a 
 
 ## Development
 
-We recommend developing on Node v4.3.2 as that is the version used by Amazon Lambda.
+We recommend developing on Node v8.1.0 as that is the version used by Amazon Lambda.
 
 You can do this with nvm if you don't already have it.
 
     brew install nvm
     nvm install node
-    nvm install 4.3
+    nvm install 8.1.0
 
 
 While we don't have tests at the moment, you can run the function locally with:

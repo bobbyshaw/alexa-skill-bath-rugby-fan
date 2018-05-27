@@ -26,9 +26,9 @@ describe('The FixtureService component', function () {
                 var fixture = fixtures.shift();
                 assert.deepEqual(fixture.homeTeamId, 'bath rugby');
                 assert.deepEqual(fixture.homeTeamName, 'Bath Rugby');
-                assert.deepEqual(fixture.awayTeamId, 'worcester warriors');
-                assert.deepEqual(fixture.awayTeamName, 'Worcester Warriors');
-                assert.deepEqual(fixture.kickoff, Date.parse('2016-09-17T14:00:00+00:00'));
+                assert.deepEqual(fixture.awayTeamId, 'exeter chiefs');
+                assert.deepEqual(fixture.awayTeamName, 'Exeter Chiefs');
+                assert.deepEqual(fixture.kickoff, Date.parse('2018-03-23T19:45:00+00:00'));
                 assert.deepEqual(fixture.location, 'Recreation Ground');
                 assert.deepEqual(fixture.homeTeamScore, null);
                 assert.deepEqual(fixture.awayTeamScore, null);
@@ -46,12 +46,12 @@ describe('The FixtureService component', function () {
                 assert.deepEqual(fixtures.length, 1);
 
                 var fixture = fixtures.shift();
-                assert.deepEqual(fixture.homeTeamId, 'leicester tigers');
-                assert.deepEqual(fixture.homeTeamName, 'Leicester Tigers');
+                assert.deepEqual(fixture.homeTeamId, 'saracens');
+                assert.deepEqual(fixture.homeTeamName, 'Saracens');
                 assert.deepEqual(fixture.awayTeamId, 'bath rugby');
                 assert.deepEqual(fixture.awayTeamName, 'Bath Rugby');
-                assert.deepEqual(fixture.kickoff, Date.parse('2016-09-25T14:00:00+00:00'));
-                assert.deepEqual(fixture.location, 'Welford Road');
+                assert.deepEqual(fixture.kickoff, Date.parse('2018-04-15T14:00:00+00:00'));
+                assert.deepEqual(fixture.location, 'Allianz Park');
                 assert.deepEqual(fixture.homeTeamScore, null);
                 assert.deepEqual(fixture.awayTeamScore, null);
             });
@@ -70,9 +70,9 @@ describe('The FixtureService component', function () {
                 var fixture = fixtures.shift();
                 assert.deepEqual(fixture.homeTeamId, 'bath rugby');
                 assert.deepEqual(fixture.homeTeamName, 'Bath Rugby');
-                assert.deepEqual(fixture.awayTeamId, 'worcester warriors');
-                assert.deepEqual(fixture.awayTeamName, 'Worcester Warriors');
-                assert.deepEqual(fixture.kickoff, Date.parse('2016-09-17T14:00:00+00:00'));
+                assert.deepEqual(fixture.awayTeamId, 'exeter chiefs');
+                assert.deepEqual(fixture.awayTeamName, 'Exeter Chiefs');
+                assert.deepEqual(fixture.kickoff, Date.parse('2018-03-23T19:45:00+00:00'));
                 assert.deepEqual(fixture.location, 'Recreation Ground');
                 assert.deepEqual(fixture.homeTeamScore, null);
                 assert.deepEqual(fixture.awayTeamScore, null);
@@ -94,7 +94,7 @@ describe('The FixtureService component', function () {
                 assert.deepEqual(fixture.homeTeamName, 'Bath Rugby');
                 assert.deepEqual(fixture.awayTeamId, 'leicester tigers');
                 assert.deepEqual(fixture.awayTeamName, 'Leicester Tigers');
-                assert.deepEqual(fixture.kickoff, Date.parse('2017-04-08T14:00:00+00:00'));
+                assert.deepEqual(fixture.kickoff, Date.parse('2018-04-07T13:00:00+00:00'));
                 assert.deepEqual(fixture.location, 'Twickenham Stadium');
                 assert.deepEqual(fixture.homeTeamScore, null);
                 assert.deepEqual(fixture.awayTeamScore, null);
@@ -109,17 +109,7 @@ describe('The FixtureService component', function () {
 
         return service.fixture('bath rugby', ['leicester tigers'], false, true)
             .then(fixtures => {
-                assert.deepEqual(fixtures.length, 1);
-
-                var fixture = fixtures.shift();
-                assert.deepEqual(fixture.homeTeamId, 'leicester tigers');
-                assert.deepEqual(fixture.homeTeamName, 'Leicester Tigers');
-                assert.deepEqual(fixture.awayTeamId, 'bath rugby');
-                assert.deepEqual(fixture.awayTeamName, 'Bath Rugby');
-                assert.deepEqual(fixture.kickoff, Date.parse('2016-09-25T14:00:00+00:00'));
-                assert.deepEqual(fixture.location, 'Welford Road');
-                assert.deepEqual(fixture.homeTeamScore, null);
-                assert.deepEqual(fixture.awayTeamScore, null);
+                assert.deepEqual(fixtures.length, 0);
             });
     });
 
@@ -136,13 +126,13 @@ describe('The FixtureService component', function () {
                 assert.deepEqual(fixtures.length, 1);
 
                 var fixture = fixtures.shift();
-                assert.deepEqual(fixture.homeTeamId, 'bath rugby');
-                assert.deepEqual(fixture.homeTeamName, 'Bath Rugby');
-                assert.deepEqual(fixture.awayTeamId, 'newcastle falcons');
-                assert.deepEqual(fixture.awayTeamName, 'Newcastle Falcons');
-                assert.deepEqual(fixture.kickoff, Date.parse('2016-09-10T14:00:00+00:00'));
-                assert.deepEqual(fixture.location, 'Recreation Ground');
-                assert.deepEqual(fixture.homeTeamScore, 58);
+                assert.deepEqual(fixture.homeTeamId, 'harlequins');
+                assert.deepEqual(fixture.homeTeamName, 'Harlequins');
+                assert.deepEqual(fixture.awayTeamId, 'bath rugby');
+                assert.deepEqual(fixture.awayTeamName, 'Bath Rugby');
+                assert.deepEqual(fixture.kickoff, Date.parse('2018-03-04T15:00:00+00:00'));
+                assert.deepEqual(fixture.location, 'Twickenham Stoop');
+                assert.deepEqual(fixture.homeTeamScore, 20);
                 assert.deepEqual(fixture.awayTeamScore, 5);
             });
     });
@@ -161,12 +151,12 @@ describe('The FixtureService component', function () {
                 var fixture = fixtures.shift();
                 assert.deepEqual(fixture.homeTeamId, 'bath rugby');
                 assert.deepEqual(fixture.homeTeamName, 'Bath Rugby');
-                assert.deepEqual(fixture.awayTeamId, 'newcastle falcons');
-                assert.deepEqual(fixture.awayTeamName, 'Newcastle Falcons');
-                assert.deepEqual(fixture.kickoff, Date.parse('2016-09-10T14:00:00+00:00'));
+                assert.deepEqual(fixture.awayTeamId, 'sale sharks');
+                assert.deepEqual(fixture.awayTeamName, 'Sale Sharks');
+                assert.deepEqual(fixture.kickoff, Date.parse('2018-02-24T14:30:00+00:00'));
                 assert.deepEqual(fixture.location, 'Recreation Ground');
-                assert.deepEqual(fixture.homeTeamScore, 58);
-                assert.deepEqual(fixture.awayTeamScore, 5);
+                assert.deepEqual(fixture.homeTeamScore, 33);
+                assert.deepEqual(fixture.awayTeamScore, 32);
             });
     });
 
@@ -182,14 +172,14 @@ describe('The FixtureService component', function () {
                 assert.deepEqual(fixtures.length, 1);
 
                 var fixture = fixtures.shift();
-                assert.deepEqual(fixture.homeTeamId, 'northampton saints');
-                assert.deepEqual(fixture.homeTeamName, 'Northampton Saints');
+                assert.deepEqual(fixture.homeTeamId, 'harlequins');
+                assert.deepEqual(fixture.homeTeamName, 'Harlequins');
                 assert.deepEqual(fixture.awayTeamId, 'bath rugby');
                 assert.deepEqual(fixture.awayTeamName, 'Bath Rugby');
-                assert.deepEqual(fixture.kickoff, Date.parse('2016-09-03T14:30:00+00:00'));
-                assert.deepEqual(fixture.location, 'Franklin&#039;s Gardens');
-                assert.deepEqual(fixture.homeTeamScore, 14);
-                assert.deepEqual(fixture.awayTeamScore, 18);
+                assert.deepEqual(fixture.kickoff, Date.parse('2018-03-04T15:00:00+00:00'));
+                assert.deepEqual(fixture.location, 'Twickenham Stoop');
+                assert.deepEqual(fixture.homeTeamScore, 20);
+                assert.deepEqual(fixture.awayTeamScore, 5);
             });
     });
 
@@ -203,7 +193,17 @@ describe('The FixtureService component', function () {
         /** @type {TablePosition} */
         return service.result('bath rugby', ['northampton saints'], true, false)
             .then(fixtures => {
-                assert.deepEqual(fixtures.length, 0);
+                assert.deepEqual(fixtures.length, 1);
+
+                var fixture = fixtures.shift();
+                assert.deepEqual(fixture.homeTeamId, 'bath rugby');
+                assert.deepEqual(fixture.homeTeamName, 'Bath Rugby');
+                assert.deepEqual(fixture.awayTeamId, 'northampton saints');
+                assert.deepEqual(fixture.awayTeamName, 'Northampton Saints');
+                assert.deepEqual(fixture.kickoff, Date.parse('2018-02-09T19:45:00+00:00'));
+                assert.deepEqual(fixture.location, 'Recreation Ground');
+                assert.deepEqual(fixture.homeTeamScore, 32);
+                assert.deepEqual(fixture.awayTeamScore, 9);
             });
     });
 
@@ -216,7 +216,17 @@ describe('The FixtureService component', function () {
         /** @type {TablePosition} */
         return service.result('bath rugby', ['newcastle falcons'], false, true)
             .then(fixtures => {
-                assert.deepEqual(fixtures.length, 0);
+                assert.deepEqual(fixtures.length, 1);
+
+                var fixture = fixtures.shift();
+                assert.deepEqual(fixture.homeTeamId, 'newcastle falcons');
+                assert.deepEqual(fixture.homeTeamName, 'Newcastle Falcons');
+                assert.deepEqual(fixture.awayTeamId, 'bath rugby');
+                assert.deepEqual(fixture.awayTeamName, 'Bath Rugby');
+                assert.deepEqual(fixture.kickoff, Date.parse('2018-02-16T19:45:00+00:00'));
+                assert.deepEqual(fixture.location, 'Kingston Park');
+                assert.deepEqual(fixture.homeTeamScore, 29);
+                assert.deepEqual(fixture.awayTeamScore, 12);
             });
     });
 
@@ -236,21 +246,21 @@ describe('The FixtureService component', function () {
                 assert.deepEqual(fixture.homeTeamName, 'Bath Rugby');
                 assert.deepEqual(fixture.awayTeamId, 'newcastle falcons');
                 assert.deepEqual(fixture.awayTeamName, 'Newcastle Falcons');
-                assert.deepEqual(fixture.kickoff, Date.parse('2016-09-10T14:00:00+00:00'));
+                assert.deepEqual(fixture.kickoff, Date.parse('2017-09-23T14:00:00+00:00'));
                 assert.deepEqual(fixture.location, 'Recreation Ground');
-                assert.deepEqual(fixture.homeTeamScore, 58);
-                assert.deepEqual(fixture.awayTeamScore, 5);
+                assert.deepEqual(fixture.homeTeamScore, 32);
+                assert.deepEqual(fixture.awayTeamScore, 33);
             });
     });
 
-    it('Get Last Home Newcastle and Northampton Result', function () {
+    it('Get Last Home Newcastle and Leicester Result', function () {
         var service = new FixtureService('http://www.example.com');
 
         var requestStub = this.sandbox.stub(request, 'call');
         requestStub.returns(Promise.resolve(exampleResponse));
 
         /** @type {TablePosition} */
-        return service.result('bath rugby', ['newcastle falcons', 'northampton saints'], true, false)
+        return service.result('bath rugby', ['newcastle falcons', 'leicester'], true, false)
             .then(fixtures => {
                 assert.deepEqual(fixtures.length, 1);
 
@@ -259,10 +269,10 @@ describe('The FixtureService component', function () {
                 assert.deepEqual(fixture.homeTeamName, 'Bath Rugby');
                 assert.deepEqual(fixture.awayTeamId, 'newcastle falcons');
                 assert.deepEqual(fixture.awayTeamName, 'Newcastle Falcons');
-                assert.deepEqual(fixture.kickoff, Date.parse('2016-09-10T14:00:00+00:00'));
+                assert.deepEqual(fixture.kickoff, Date.parse('2017-09-23T14:00:00+00:00'));
                 assert.deepEqual(fixture.location, 'Recreation Ground');
-                assert.deepEqual(fixture.homeTeamScore, 58);
-                assert.deepEqual(fixture.awayTeamScore, 5);
+                assert.deepEqual(fixture.homeTeamScore, 32);
+                assert.deepEqual(fixture.awayTeamScore, 33);
             });
     });
 
@@ -278,24 +288,24 @@ describe('The FixtureService component', function () {
                 assert.deepEqual(fixtures.length, 2);
 
                 var fixture = fixtures.shift();
-                assert.deepEqual(fixture.homeTeamId, 'bath rugby');
-                assert.deepEqual(fixture.homeTeamName, 'Bath Rugby');
-                assert.deepEqual(fixture.awayTeamId, 'newcastle falcons');
-                assert.deepEqual(fixture.awayTeamName, 'Newcastle Falcons');
-                assert.deepEqual(fixture.kickoff, Date.parse('2016-09-10T14:00:00+00:00'));
-                assert.deepEqual(fixture.location, 'Recreation Ground');
-                assert.deepEqual(fixture.homeTeamScore, 58);
-                assert.deepEqual(fixture.awayTeamScore, 5);
-
-                fixture = fixtures.shift();
-                assert.deepEqual(fixture.homeTeamId, 'northampton saints');
-                assert.deepEqual(fixture.homeTeamName, 'Northampton Saints');
+                assert.deepEqual(fixture.homeTeamId, 'newcastle falcons');
+                assert.deepEqual(fixture.homeTeamName, 'Newcastle Falcons');
                 assert.deepEqual(fixture.awayTeamId, 'bath rugby');
                 assert.deepEqual(fixture.awayTeamName, 'Bath Rugby');
-                assert.deepEqual(fixture.kickoff, Date.parse('2016-09-03T14:30:00+00:00'));
-                assert.deepEqual(fixture.location, 'Franklin&#039;s Gardens');
-                assert.deepEqual(fixture.homeTeamScore, 14);
-                assert.deepEqual(fixture.awayTeamScore, 18);
+                assert.deepEqual(fixture.kickoff, Date.parse('2018-02-16T19:45:00+00:00'));
+                assert.deepEqual(fixture.location, 'Kingston Park');
+                assert.deepEqual(fixture.homeTeamScore, 29);
+                assert.deepEqual(fixture.awayTeamScore, 12);
+
+                fixture = fixtures.shift();
+                assert.deepEqual(fixture.homeTeamId, 'bath rugby');
+                assert.deepEqual(fixture.homeTeamName, 'Bath Rugby');
+                assert.deepEqual(fixture.awayTeamId, 'northampton saints');
+                assert.deepEqual(fixture.awayTeamName, 'Northampton Saints');
+                assert.deepEqual(fixture.kickoff, Date.parse('2018-02-09T19:45:00+00:00'));
+                assert.deepEqual(fixture.location, 'Recreation Ground');
+                assert.deepEqual(fixture.homeTeamScore, 32);
+                assert.deepEqual(fixture.awayTeamScore, 9);
             });
     });
 
@@ -311,24 +321,25 @@ describe('The FixtureService component', function () {
                 assert.deepEqual(fixtures.length, 2);
 
                 var fixture = fixtures.shift();
-                assert.deepEqual(fixture.homeTeamId, 'bath rugby');
-                assert.deepEqual(fixture.homeTeamName, 'Bath Rugby');
-                assert.deepEqual(fixture.awayTeamId, 'newcastle falcons');
-                assert.deepEqual(fixture.awayTeamName, 'Newcastle Falcons');
-                assert.deepEqual(fixture.kickoff, Date.parse('2016-09-10T14:00:00+00:00'));
-                assert.deepEqual(fixture.location, 'Recreation Ground');
-                assert.deepEqual(fixture.homeTeamScore, 58);
-                assert.deepEqual(fixture.awayTeamScore, 5);
-
-                fixture = fixtures.shift();
-                assert.deepEqual(fixture.homeTeamId, 'northampton saints');
-                assert.deepEqual(fixture.homeTeamName, 'Northampton Saints');
+                assert.deepEqual(fixture.homeTeamId, 'newcastle falcons');
+                assert.deepEqual(fixture.homeTeamName, 'Newcastle Falcons');
                 assert.deepEqual(fixture.awayTeamId, 'bath rugby');
                 assert.deepEqual(fixture.awayTeamName, 'Bath Rugby');
-                assert.deepEqual(fixture.kickoff, Date.parse('2016-09-03T14:30:00+00:00'));
-                assert.deepEqual(fixture.location, 'Franklin&#039;s Gardens');
-                assert.deepEqual(fixture.homeTeamScore, 14);
-                assert.deepEqual(fixture.awayTeamScore, 18);
+                assert.deepEqual(fixture.kickoff, Date.parse('2018-02-16T19:45:00+00:00'));
+                assert.deepEqual(fixture.location, 'Kingston Park');
+                assert.deepEqual(fixture.homeTeamScore, 29);
+                assert.deepEqual(fixture.awayTeamScore, 12);
+
+                fixture = fixtures.shift();
+
+                assert.deepEqual(fixture.homeTeamId, 'bath rugby');
+                assert.deepEqual(fixture.homeTeamName, 'Bath Rugby');
+                assert.deepEqual(fixture.awayTeamId, 'northampton saints');
+                assert.deepEqual(fixture.awayTeamName, 'Northampton Saints');
+                assert.deepEqual(fixture.kickoff, Date.parse('2018-02-09T19:45:00+00:00'));
+                assert.deepEqual(fixture.location, 'Recreation Ground');
+                assert.deepEqual(fixture.homeTeamScore, 32);
+                assert.deepEqual(fixture.awayTeamScore, 9);
             });
     });
 });

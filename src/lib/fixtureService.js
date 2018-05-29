@@ -86,6 +86,12 @@ class FixtureService {
                             Date.parse(fixture.kickoff)
                         ));
                     }
+
+                    // Ensure fixtures are sorted by kickoff. 
+                    fixtures.sort(function (a, b) {
+                        return (a.kickoff < b.kickoff) ? -1 : 1;
+                    });
+
                     resolve(fixtures);
                 } else {
                     reject(new Error('Fixture information unavailable'));

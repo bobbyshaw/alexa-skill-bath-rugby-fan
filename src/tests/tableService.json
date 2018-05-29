@@ -2,171 +2,171 @@
     "data": [
         {
             "position": 1,
-            "team": {
-                "name": "Saracens"
-            },
-            "played": 2,
-            "won": 2,
+            "team": "Exeter Chiefs",
+            "played": 22,
+            "won": 17,
             "drawn": 0,
-            "lost": 0,
-            "for": 69,
-            "against": 16,
-            "bonus_points": 2,
-            "points": 10
+            "lost": 5,
+            "for": 618,
+            "against": 354,
+            "points_difference": 264,
+            "bonus_points": 17,
+            "points": 85,
+            "conference": null
         },
         {
             "position": 2,
-            "team": {
-                "name": "Bath Rugby"
-            },
-            "played": 2,
-            "won": 2,
+            "team": "Saracens",
+            "played": 22,
+            "won": 16,
             "drawn": 0,
-            "lost": 0,
-            "for": 76,
-            "against": 19,
-            "bonus_points": 1,
-            "points": 9
+            "lost": 6,
+            "for": 731,
+            "against": 350,
+            "points_difference": 381,
+            "bonus_points": 13,
+            "points": 77,
+            "conference": null
         },
         {
             "position": 3,
-            "team": {
-                "name": "Wasps"
-            },
-            "played": 2,
-            "won": 2,
-            "drawn": 0,
-            "lost": 0,
-            "for": 59,
-            "against": 42,
-            "bonus_points": 1,
-            "points": 9
+            "team": "Wasps",
+            "played": 22,
+            "won": 14,
+            "drawn": 1,
+            "lost": 7,
+            "for": 615,
+            "against": 501,
+            "points_difference": 114,
+            "bonus_points": 13,
+            "points": 71,
+            "conference": null
         },
         {
             "position": 4,
-            "team": {
-                "name": "Northampton Saints"
-            },
-            "played": 2,
-            "won": 1,
+            "team": "Newcastle Falcons",
+            "played": 22,
+            "won": 14,
             "drawn": 0,
-            "lost": 1,
-            "for": 46,
-            "against": 28,
-            "bonus_points": 2,
-            "points": 6
+            "lost": 8,
+            "for": 455,
+            "against": 506,
+            "points_difference": -51,
+            "bonus_points": 7,
+            "points": 63,
+            "conference": null
         },
         {
             "position": 5,
-            "team": {
-                "name": "Sale Sharks"
-            },
-            "played": 2,
-            "won": 1,
+            "team": "Leicester Tigers",
+            "played": 22,
+            "won": 13,
             "drawn": 0,
-            "lost": 1,
-            "for": 36,
-            "against": 29,
-            "bonus_points": 1,
-            "points": 5
+            "lost": 9,
+            "for": 537,
+            "against": 472,
+            "points_difference": 65,
+            "bonus_points": 11,
+            "points": 63,
+            "conference": null
         },
         {
             "position": 6,
-            "team": {
-                "name": "Leicester Tigers"
-            },
-            "played": 2,
-            "won": 1,
+            "team": "Bath Rugby",
+            "played": 22,
+            "won": 11,
             "drawn": 0,
-            "lost": 1,
-            "for": 60,
-            "against": 65,
-            "bonus_points": 1,
-            "points": 5
+            "lost": 11,
+            "for": 572,
+            "against": 531,
+            "points_difference": 41,
+            "bonus_points": 12,
+            "points": 56,
+            "conference": null
         },
         {
             "position": 7,
-            "team": {
-                "name": "Harlequins"
-            },
-            "played": 2,
-            "won": 1,
-            "drawn": 0,
-            "lost": 1,
-            "for": 31,
-            "against": 38,
-            "bonus_points": 0,
-            "points": 4
+            "team": "Gloucester",
+            "played": 22,
+            "won": 11,
+            "drawn": 1,
+            "lost": 10,
+            "for": 490,
+            "against": 597,
+            "points_difference": -107,
+            "bonus_points": 10,
+            "points": 56,
+            "conference": null
         },
         {
             "position": 8,
-            "team": {
-                "name": "Newcastle Falcons"
-            },
-            "played": 2,
-            "won": 1,
+            "team": "Sale Sharks",
+            "played": 22,
+            "won": 10,
             "drawn": 0,
-            "lost": 1,
-            "for": 24,
-            "against": 75,
-            "bonus_points": 0,
-            "points": 4
+            "lost": 12,
+            "for": 556,
+            "against": 531,
+            "points_difference": 25,
+            "bonus_points": 14,
+            "points": 54,
+            "conference": null
         },
         {
             "position": 9,
-            "team": {
-                "name": "Gloucester Rugby"
-            },
-            "played": 2,
-            "won": 0,
-            "drawn": 1,
-            "lost": 1,
-            "for": 54,
-            "against": 61,
-            "bonus_points": 2,
-            "points": 4
+            "team": "Northampton Saints",
+            "played": 22,
+            "won": 8,
+            "drawn": 0,
+            "lost": 14,
+            "for": 509,
+            "against": 645,
+            "points_difference": -136,
+            "bonus_points": 11,
+            "points": 43,
+            "conference": null
         },
         {
             "position": 10,
-            "team": {
-                "name": "Worcester Warrios"
-            },
-            "played": 2,
-            "won": 0,
-            "drawn": 1,
-            "lost": 1,
-            "for": 26,
-            "against": 58,
-            "bonus_points": 0,
-            "points": 2
+            "team": "Harlequins",
+            "played": 22,
+            "won": 7,
+            "drawn": 0,
+            "lost": 15,
+            "for": 479,
+            "against": 640,
+            "points_difference": -161,
+            "bonus_points": 8,
+            "points": 36,
+            "conference": null
         },
         {
             "position": 11,
-            "team": {
-                "name": "Bristol Rugby"
-            },
-            "played": 2,
-            "won": 0,
+            "team": "Worcester",
+            "played": 22,
+            "won": 7,
             "drawn": 0,
-            "lost": 2,
-            "for": 29,
-            "against": 53,
-            "bonus_points": 1,
-            "points": 1
+            "lost": 15,
+            "for": 432,
+            "against": 601,
+            "points_difference": -169,
+            "bonus_points": 8,
+            "points": 36,
+            "conference": null
         },
         {
             "position": 12,
-            "team": {
-                "name": "Exeter Chiefs"
-            },
-            "played": 2,
-            "won": 0,
+            "team": "London Irish",
+            "played": 22,
+            "won": 3,
             "drawn": 0,
-            "lost": 2,
-            "for": 33,
-            "against": 59,
-            "bonus_points": 1,
-            "points": 1
+            "lost": 19,
+            "for": 385,
+            "against": 651,
+            "points_difference": -266,
+            "bonus_points": 10,
+            "points": 22,
+            "conference": null
         }
     ],
     "meta": {

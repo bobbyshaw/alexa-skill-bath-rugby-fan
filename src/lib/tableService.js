@@ -55,7 +55,7 @@ class TableService {
                     for (let position of response.data) {
                         positions.push(new TablePosition(
                             position.position,
-                            position.team.name,
+                            position.team,
                             position.played,
                             position.won,
                             position.drawn,

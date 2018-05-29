@@ -20,33 +20,33 @@ describe('The TableService component', function () {
 
         var answers = {
             'Bath Rugby': {
-                'position': 2,
+                'position': 6,
                 'teamName': 'Bath Rugby',
-                'played': 2,
-                'won': 2,
+                'played': 22,
+                'won': 11,
                 'drawn': 0,
-                'lost': 0,
-                'pointsFor': 76,
-                'pointsAgainst': 19,
-                'bonusPoints': 1,
-                'points': 9
+                'lost': 11,
+                'pointsFor': 572,
+                'pointsAgainst': 531,
+                'bonusPoints': 12,
+                'points': 56
             },
-            'Gloucester Rugby': {
-                'position': 9,
-                'teamName': 'Gloucester Rugby',
-                'played': 2,
-                'won': 0,
+            'Gloucester': {
+                'position': 7,
+                'teamName': 'Gloucester',
+                'played': 22,
+                'won': 11,
                 'drawn': 1,
-                'lost': 1,
-                'pointsFor': 54,
-                'pointsAgainst': 61,
-                'bonusPoints': 2,
-                'points': 4
+                'lost': 10,
+                'pointsFor': 490,
+                'pointsAgainst': 597,
+                'bonusPoints': 10,
+                'points': 56
             }
         };
 
         /** @type {TablePosition} */
-        return service.getPositions(['bath rugby', 'Gloucester Rugby'])
+        return service.getPositions(['bath rugby', 'Gloucester'])
             .then(positions => {
                 for (let position of positions) {
                     if (position.teamName in answers) {

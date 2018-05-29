@@ -104,7 +104,6 @@ class Message {
             if (entity.type === 'Team') {
                 for (let team in TEAMS) {
                     if (TEAMS[team].includes(entity.value.toLowerCase())) {
-                        console.log[TEAMS[team]];
                         teams.push(TEAMS[team]);
                     }
                 }

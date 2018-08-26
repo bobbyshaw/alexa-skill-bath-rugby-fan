@@ -23,7 +23,8 @@ class Greeting extends Ability {
      */
     respond(message) {
         return Promise.resolve('Hi there! You can ask me about ' + message.getTeam() + '\'s Gallagher '
-            + 'Premiership fixtures, results and table position. Would you like to know Bath Rugby\'s latest result?');
+            + 'Premiership fixtures, results and table position. Would you like to know '
+            + message.getTeam() + '\'s latest result?');
     }
 }
 

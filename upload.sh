@@ -18,5 +18,12 @@ aws lambda update-function-code \
   --zip-file fileb:///tmp/lambda-upload.zip \
   --publish
 
+aws lambda update-function-code \
+    --region eu-west-1 \
+    --profile personal \
+    --function-name SaracensAlexaSkill \
+    --zip-file fileb:///tmp/lambda-upload.zip \
+    --publish
+
 # Clean up.
 rm -f /tmp/lambda-upload.zip

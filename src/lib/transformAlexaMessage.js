@@ -15,13 +15,17 @@ class TransformAlexaMessage {
      * @return {Promise<Messsage, Error>} Message with analysis
      */
     transform(event, context) {
-        var intents = [new Intent(event.request.intent.name, 1)];
+        var intents = null;
         var entities = [];
 
-        var slots = event.request.intent.slots;
-        for (let slot in slots) {
-            if (slots[slot]['value']) {
-                entities.push(new Entity(slots[slot]['name'], slots[slot]['value']))
+        if (typeof event.request.intent != 'undefined') {
+            intents = [new Intent(event.request.intent.name, 1)];
+
+            var slots = event.request.intent.slots;
+            for (let slot in slots) {
+                if (slots[slot]['value']) {
+                    entities.push(new Entity(slots[slot]['name'], slots[slot]['value']))
+                }
             }
         }
 

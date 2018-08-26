@@ -1,69 +1,319 @@
 {
-    "intents": [
-        {
-            "intent": "Greeting"
-        },
-        {
-            "intent": "Fixture",
-            "slots": [
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "bath rugby fan",
+            "intents": [
+                {
+                    "name": "Greeting",
+                    "slots": [],
+                    "samples": [
+                        "Afternoon",
+                        "Good day",
+                        "Hello",
+                        "Hi",
+                        "Hi there",
+                        "How do you do",
+                        "Howdy",
+                        "Morning",
+                        "Sup",
+                        "Wassup",
+                        "Yo"
+                    ]
+                },
+                {
+                    "name": "Fixture",
+                    "slots": [
+                        {
+                            "name": "Location",
+                            "type": "Location"
+                        },
+                        {
+                            "name": "Team",
+                            "type": "Team"
+                        },
+                        {
+                            "name": "Date",
+                            "type": "AMAZON.DATE"
+                        }
+                    ],
+                    "samples": [
+                        "Are {Team} at home this weekend",
+                        "Is the game on {Date}",
+                        "Is there a game {Date}",
+                        "Next up",
+                        "What's the game today",
+                        "When's the next {Location} game",
+                        "What time's kickoff",
+                        "When's the next game",
+                        "Who are we against {Date}",
+                        "Who are we playing {Date}",
+                        "Who are we up against next",
+                        "Who do {Team} play next",
+                        "Who do we play {Date}",
+                        "When do we next play {Team} {Location}",
+                        "When's the next {Location} game against {Team}",
+                        "When do they play {Team}",
+                        "When do they play {Team} {Location}"
+                    ]
+                },
+                {
+                    "name": "Result",
+                    "slots": [
+                        {
+                            "name": "Location",
+                            "type": "Location"
+                        },
+                        {
+                            "name": "Team",
+                            "type": "Team"
+                        },
+                        {
+                            "name": "Date",
+                            "type": "AMAZON.DATE"
+                        }
+                    ],
+                    "samples": [
+                        "Did we beat {Team}",
+                        "Did we thrash {Team}",
+                        "Do we normally score many tries against {Team}",
+                        "How much did we lose at {Date}",
+                        "What was the score against {Team}",
+                        "What was the score {Date}",
+                        "What the score was {Date}",
+                        "What was the score the last time we played {Team} at {Location}",
+                        "When did we last play {Team}",
+                        "When was the last match against {Team}",
+                        "Who won last between us and {Team}",
+                        "What was the score against {Team} when we played them at {Location}"
+                    ]
+                },
+                {
+                    "name": "Table",
+                    "slots": [
+                        {
+                            "name": "Position",
+                            "type": "Position"
+                        },
+                        {
+                            "name": "Team",
+                            "type": "Team"
+                        }
+                    ],
+                    "samples": [
+                        "Are {Team} doing well",
+                        "Are {Team} going to make the play offs",
+                        "Are we above {Team}",
+                        "Are we below {Team}",
+                        "Are we going to be in the play offs",
+                        "Are {Team} going to be relegated",
+                        "Are {Team} mid-table",
+                        "Are {Team} still {Position}",
+                        "Can {Team} get to the final",
+                        "How are we doing",
+                        "How are we doing this year",
+                        "How many points do we have",
+                        "What position are we in the table",
+                        "Where are we",
+                        "Where are we in the table",
+                        "Where are {Team} in the table",
+                        "Where they are in the table"
+                    ]
+                },
+                {
+                    "name": "AMAZON.YesIntent",
+                    "samples": [
+                        "Yes please"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                }
+            ],
+            "types": [
                 {
                     "name": "Location",
-                    "type": "Location"
+                    "values": [
+                        {
+                            "name": {
+                                "value": "home"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "away"
+                            }
+                        }
+                    ]
                 },
-                {
-                    "name": "Team",
-                    "type": "Team"
-                },
-                {
-                    "name": "Date",
-                    "type": "AMAZON.DATE"
-                }
-            ]
-        },
-        {
-            "intent": "Result",
-            "slots": [
-                {
-                    "name": "Location",
-                    "type": "Location"
-                },
-                {
-                    "name": "Team",
-                    "type": "Team"
-                },
-                {
-                    "name": "Date",
-                    "type": "AMAZON.DATE"
-                }
-            ]
-        },
-        {
-            "intent": "Table",
-            "slots": [
                 {
                     "name": "Position",
-                    "type": "Position"
+                    "values": [
+                        {
+                            "name": {
+                                "value": "First"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Second"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Third"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Fourth"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Fifth"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sixth"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Seventh"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Eighth"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Tenth"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Eleventh"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Twelfth"
+                            }
+                        }
+                    ]
                 },
                 {
                     "name": "Team",
-                    "type": "Team"
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Bath"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Bristol"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Exeter"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Chiefs"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Gloucester"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Harlequins"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Leicester"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Tigers"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Newcastle"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Falcons"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Northampton"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Saints"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sale"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sharks"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Saracens"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Wasps"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Worcester"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Warriors"
+                            }
+                        }
+                    ]
                 }
             ]
-        },
-        {
-            "intent": "AMAZON.YesIntent"
-        },
-        {
-            "intent": "AMAZON.NoIntent"
-        },
-        {
-            "intent": "AMAZON.CancelIntent"
-        },
-        {
-            "intent": "AMAZON.StopIntent"
-        },
-        {
-            "intent": "AMAZON.HelpIntent"
         }
-    ]
+    }
 }

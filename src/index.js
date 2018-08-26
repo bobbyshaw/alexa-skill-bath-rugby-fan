@@ -8,9 +8,6 @@ var GreetingAbility = require('./lib/ability/greeting');
 var ResultAbility = require('./lib/ability/result');
 var TableAbility = require('./lib/ability/table');
 
-const APP_ID = '';
-const TEAM = 'bath rugby';
-
 var SKILL_STATES = {
     RESULT: "_RESULT", // We've asked if they wish to know a result
 };
@@ -26,7 +23,10 @@ var newSessionHandlers = {
 
     'Greeting': function() {
         var ability = new GreetingAbility();
-        ability.respond()
+        var transformer = new TransformAlexaMessage();
+        var message = transformer.transform(this.event, {'team': process.env.TEAM });
+
+        ability.respond(message)
             .then(message => {
                 this.handler.state = SKILL_STATES.RESULT;
                 this.emit(':ask', message, 'Would you like to know their latest result?');
@@ -39,7 +39,7 @@ var newSessionHandlers = {
     'Fixture': function() {
         var ability = new FixtureAbility();
         var transformer = new TransformAlexaMessage();
-        var message = transformer.transform(this.event, {'team': TEAM });
+        var message = transformer.transform(this.event, {'team': process.env.TEAM });
 
         ability.respond(message)
             .then(message => {
@@ -54,7 +54,7 @@ var newSessionHandlers = {
     'Result': function() {
         var ability = new ResultAbility();
         var transformer = new TransformAlexaMessage();
-        var message = transformer.transform(this.event, {'team': TEAM });
+        var message = transformer.transform(this.event, {'team': process.env.TEAM });
 
         ability.respond(message)
             .then(message => {
@@ -69,7 +69,7 @@ var newSessionHandlers = {
     'Table': function() {
         var ability = new TableAbility();
         var transformer = new TransformAlexaMessage();
-        var message = transformer.transform(this.event, {'team': TEAM });
+        var message = transformer.transform(this.event, {'team': process.env.TEAM });
 
         ability.respond(message)
             .then(message => {
@@ -108,7 +108,7 @@ resultStateHandlers = Object.assign(resultStateHandlers, newSessionHandlers);
 
 exports.handler = function(event, context, callback){
     var alexa = Alexa.handler(event, context);
-    alexa.appId = APP_ID;
+    alexa.appId = process.env.APP_ID;
     alexa.registerHandlers(newSessionHandlers, resultStateHandlers);
     alexa.execute();
 };
